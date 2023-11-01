@@ -1,0 +1,27 @@
+:root {
+    --blue: #1560BD;
+    --yellow: #D4A518;
+    --cream: #FFEECA;
+    --brown: #867555;
+    --white: white;
+    --off-black: #303030;
+}
+
+.content {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.header {
+    background-color: var(--cream);
+    color: var(--black);
+}
+
+.footer,
+.header .module {
+    background-color: var(--blue);
+}
+
+.header {
+    display: flex;
+}
