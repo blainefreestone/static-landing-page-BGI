@@ -1,3 +1,67 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/NexaLight.woff2') format('woff2'),
+        url('./fonts/NexaLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./fonts/NexaBold.woff2') format('woff2'),
+        url('./fonts/NexaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('./fonts/NEXTART-Bold.woff2') format('woff2'),
+        url('./fonts/NEXTART-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('./fonts/NEXTART-Light.woff2') format('woff2'),
+        url('./fonts/NEXTART-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('./fonts/NEXTART-Heavy.woff2') format('woff2'),
+        url('./fonts/NEXTART-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('./fonts/NEXTART-SemiBold.woff2') format('woff2'),
+        url('./fonts/NEXTART-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NEXT ART';
+    src: url('./fonts/NEXTART.woff2') format('woff2'),
+        url('./fonts/NEXTART.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --blue: #1560BD;
     --yellow: #D4A518;
@@ -7,21 +71,70 @@
     --off-black: #303030;
 }
 
-.content {
+body h1,
+body h2,
+body h3 {
+    font-family: 'NEXT ART';
+}
+
+body {
+    font-family: 'Nexa';
+}
+
+.content,
+.header .module {
     background-color: var(--white);
-    color: var(--black);
+    color: var(--off-black);
+}
+
+.content a,
+.header .module a {
+    color: var(--brown);
+    font-weight: bold;
 }
 
 .header {
-    background-color: var(--cream);
-    color: var(--black);
+    background-color: var(--blue);
+    color: var(--white);
 }
 
-.footer,
-.header .module {
-    background-color: var(--blue);
+.header .attention {
+    color: var(--yellow);
+    font-weight: 400;
 }
 
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    margin: 2rem 0 2rem 2rem;
+
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.header .title,
+.header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.header .module {
+    margin: 2rem 3rem 2rem 5rem;
+    padding: 1rem;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10px;
+
+    font-size: 1.25rem;
+
+    flex-grow: 0;
+    flex-shrink: 0;
 }
