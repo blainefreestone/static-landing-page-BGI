@@ -173,6 +173,7 @@ button:hover,
 
 .header .logo {
     margin: 2rem 0 2rem 2rem;
+    height: 18rem;
 
     flex-grow: 0;
     flex-shrink: 0;
@@ -247,4 +248,52 @@ input {
     padding: 1rem;
     border-radius: 25px;
     border: 1px solid var(--off-black);
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .header {
+        flex-direction: column;
+    }
+
+    .header .logo {
+        margin: 2rem;
+        height: 13rem;
+    }
+
+    .header .title,
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header .module {
+        margin: 2rem;
+        padding: 0 1rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content .info-form {
+        margin: 1.5rem;
+    }
+
+    .info-form legend {
+        margin-bottom: 1.5rem;
+    }
+
+    .info-form .row {
+        margin-bottom: .5rem;
+    }
+
+    .content .left {
+        display: flex;
+        flex-direction: column;
+    }
 }
